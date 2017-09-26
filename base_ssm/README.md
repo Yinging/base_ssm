@@ -23,10 +23,10 @@
 <div style="background-color: #F3F3F3;
         width: 600px;
         padding: 20px 40px;">
-    潘海南 <br/><br/>
-    网站：<a href="http://www.panhainan.com" target="_blank">panhainan.com</a> <br/><br/>
-    邮箱：panhainan@yeah.net <br/><br/>
-    Q Q ：1016593477 <br/>
+    sunrain <br/><br/>
+    网站：<a href="https://github.com/sunrain520/base_ssm" target="_blank">base_ssm</a> <br/><br/>
+    邮箱： <br/>dybarr@qq.com<br/>
+    Q Q ： <br/>
 </div>
 
 
