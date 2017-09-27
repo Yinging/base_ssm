@@ -1,4 +1,4 @@
-# fo-ssm
+# base-ssm
 ### &emsp;&emsp;一个集成SpringMVC、Spring、Mybatis等框架的快速开发的项目，需要根据自己需要简单修改配置即可作为自己项目的开发基本架构。  
 
 
