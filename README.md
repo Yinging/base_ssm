@@ -1,37 +1,41 @@
-## Welcome to GitHub Pages
+# fo-ssm
+### &emsp;&emsp;一个集成SpringMVC、Spring、Mybatis等框架的快速开发的项目，需要根据自己需要简单修改配置即可作为自己项目的开发基本架构。  
 
-You can use the [editor on GitHub](https://github.com/sunrain520/base_ssm/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+基于约定大于配置原则。
 
-### Markdown
+规范约定：
+    1. 数据库表字段使用下划线(_)分割单词，对应Java实体使用驼峰命名法，这里`mybatis-config.xml`中的配置项：
+    ```<setting name="mapUnderscoreToCamelCase" value="true"/>```
+    会自动将驼峰命名法的属性与数据库中的下划线命名法的字段关联起来，而不需要手动去写`resultMap`。
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+需要自定义修改的地方为：
+项目的包名，原包名为`com.panhainan`，修改成你的包名；
+    由于项目包名在配置中需要使用，因此在`src/main/resources/spring/`中的`spring-service.xml`和`spring-web.xml`文件中的`context:component-scan`将其中的包名改为你的包名；以及在`spring-dao.xml`里面的配置`mybatis`的注入`dao`接口配置处和实体自动扫描处将包名修改。
 
-```markdown
-Syntax highlighted code block
+其他的根据自己的需要进行修改，比如数据库配置，日志配置等等；
+ 
 
-# Header 1
-## Header 2
-### Header 3
+<br/>
+<br/>
+<br/>
+部署配置过程中遇到问题可以联系作者，作者联系方式如下：<br/><br/>
+<div style="background-color: #F3F3F3;
+        width: 600px;
+        padding: 20px 40px;">
+    sunrain <br/><br/>
+    网站：<a href="https://github.com/sunrain520/base_ssm" target="_blank">base_ssm</a> <br/><br/>
+    邮箱： <br/>dybarr@qq.com<br/>
+    Q Q ： <br/>
+</div>
 
-- Bulleted
-- List
 
-1. Numbered
-2. List
 
-**Bold** and _Italic_ and `Code` text
+# 如果觉得好，就请支持一下，谢谢！  
 
-[Link](url) and ![Image](src)
-```
+<div>
+<div  style="float:left;"><img src="" width="200px"></img></div>
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
+<div  style="float:left;margin-left:50px"><img src="" width="200px" ></img></div>
 
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/sunrain520/base_ssm/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+</div>
