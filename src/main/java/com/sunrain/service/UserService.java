@@ -7,17 +7,21 @@ import com.sunrain.vo.UserSignInForm;
 import com.sunrain.vo.UserSignUpForm;
 
 /**
+ * 
  * 测试案例：User的业务逻辑接口
- * @author panhainan
- * @email panhainan@yeah.net
- * @version 1.0
+ *
+ * @author sunrain
+ * @date 2017年9月28日
+ * @email dybarr@qq.com
  */
 public interface UserService {
 
-    UserSignUpResult signUp(UserSignUpForm userSignUpForm);
-    CheckResult checkUserNameIsExist(String userName);
-    CheckResult checkUserEmailIsExist(String userEmail);
+	UserSignUpResult signUp(UserSignUpForm userSignUpForm);
 
-    UserSignInResult signIn(UserSignInForm userSignInForm);
+	CheckResult checkUserNameIsExist(String userName);
+
+	CheckResult checkUserEmailIsExist(String userEmail);
+
+	UserSignInResult signIn(UserSignInForm userSignInForm);
 
 }

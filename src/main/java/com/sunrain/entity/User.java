@@ -5,133 +5,122 @@ import java.util.Date;
 /**
  * 测试案例：实体类User
  *
- * @author panhainan
- * @version 1.0
- * @email panhainan@yeah.net
+ * @author sunrain
+ * @date 2017年9月28日
+ * @email dybar@qq.com
  */
 public class User {
 
-    private int id;
-    private String userName;
-    private String userPass;
-    private String userEmail;
-    private Date registerTime;
-    private String nickName;
-    private byte status;
-    private byte sex;
-    private Date birth;
-    private String profile;
+	private int id;
+	private String userName;
+	private String userPass;
+	private String userEmail;
+	private Date registerTime;
+	private String nickName;
+	private byte status;
+	private byte sex;
+	private Date birth;
+	private String profile;
 
+	public User() {
+	}
 
-    public User() {
-    }
+	public User(String userName, String userPass) {
+		this.userName = userName;
+		this.userPass = userPass;
+	}
 
-    public User(String userName, String userPass) {
-        this.userName = userName;
-        this.userPass = userPass;
-    }
+	public User(String userName, String userPass, String userEmail) {
+		this.userName = userName;
+		this.userPass = userPass;
+		this.userEmail = userEmail;
+	}
 
-    public User(String userName, String userPass, String userEmail) {
-        this.userName = userName;
-        this.userPass = userPass;
-        this.userEmail = userEmail;
-    }
+	@Override
+	public String toString() {
+		return "User{" + "id=" + id + ", userName='" + userName + '\'' + ", userPass='" + userPass + '\''
+				+ ", userEmail='" + userEmail + '\'' + ", registerTime=" + registerTime + ", nickName='" + nickName
+				+ '\'' + ", status=" + status + ", sex=" + sex + ", birth=" + birth + ", profile='" + profile + '\''
+				+ '}';
+	}
 
+	public int getId() {
+		return id;
+	}
 
-    @Override
-    public String toString() {
-        return "User{" +
-                "id=" + id +
-                ", userName='" + userName + '\'' +
-                ", userPass='" + userPass + '\'' +
-                ", userEmail='" + userEmail + '\'' +
-                ", registerTime=" + registerTime +
-                ", nickName='" + nickName + '\'' +
-                ", status=" + status +
-                ", sex=" + sex +
-                ", birth=" + birth +
-                ", profile='" + profile + '\'' +
-                '}';
-    }
+	public void setId(int id) {
+		this.id = id;
+	}
 
+	public String getUserName() {
+		return userName;
+	}
 
-    public int getId() {
-        return id;
-    }
+	public void setUserName(String userName) {
+		this.userName = userName;
+	}
 
-    public void setId(int id) {
-        this.id = id;
-    }
+	public String getUserPass() {
+		return userPass;
+	}
 
-    public String getUserName() {
-        return userName;
-    }
+	public void setUserPass(String userPass) {
+		this.userPass = userPass;
+	}
 
-    public void setUserName(String userName) {
-        this.userName = userName;
-    }
+	public String getUserEmail() {
+		return userEmail;
+	}
 
-    public String getUserPass() {
-        return userPass;
-    }
+	public void setUserEmail(String userEmail) {
+		this.userEmail = userEmail;
+	}
 
-    public void setUserPass(String userPass) {
-        this.userPass = userPass;
-    }
+	public Date getRegisterTime() {
+		return registerTime;
+	}
 
-    public String getUserEmail() {
-        return userEmail;
-    }
+	public void setRegisterTime(Date registerTime) {
+		this.registerTime = registerTime;
+	}
 
-    public void setUserEmail(String userEmail) {
-        this.userEmail = userEmail;
-    }
+	public String getNickName() {
+		return nickName;
+	}
 
-    public Date getRegisterTime() {
-        return registerTime;
-    }
+	public void setNickName(String nickName) {
+		this.nickName = nickName;
+	}
 
-    public void setRegisterTime(Date registerTime) {
-        this.registerTime = registerTime;
-    }
+	public byte getStatus() {
+		return status;
+	}
 
-    public String getNickName() {
-        return nickName;
-    }
+	public void setStatus(byte status) {
+		this.status = status;
+	}
 
-    public void setNickName(String nickName) {
-        this.nickName = nickName;
-    }
+	public byte getSex() {
+		return sex;
+	}
 
-    public byte getStatus() {
-        return status;
-    }
+	public void setSex(byte sex) {
+		this.sex = sex;
+	}
 
-    public void setStatus(byte status) {
-        this.status = status;
-    }
+	public Date getBirth() {
+		return birth;
+	}
 
-    public byte getSex() {
-        return sex;
-    }
+	public void setBirth(Date birth) {
+		this.birth = birth;
+	}
 
-    public void setSex(byte sex) {
-        this.sex = sex;
-    }
+	public String getProfile() {
+		return profile;
+	}
 
-    public Date getBirth() {
-        return birth;
-    }
-
-    public void setBirth(Date birth) {
-        this.birth = birth;
-    }
-
-    public String getProfile() {
-        return profile;
-    }
-
-    public void setProfile(String profile) {
-        this.profile = profile;
-    }
+	public void setProfile(String profile) {
+		this.profile = profile;
+	}
 }

@@ -22,9 +22,9 @@ import com.sunrain.vo.UserSignUpForm;
 /**
  * 测试案例：User的业务逻辑实现类
  *
- * @author panhainan
+ * @author sunrain
  * @version 1.0
- * @email panhainan@yeah.net
+ * @email dybarr@qq.com
  */
 @Service
 public class UserServiceImpl implements UserService {

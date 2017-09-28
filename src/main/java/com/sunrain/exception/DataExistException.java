@@ -1,15 +1,23 @@
 package com.sunrain.exception;
 
 /**
- * Created by FirePan on 2017/1/23.
+ * 
+ * Title: DataExistException.java Description:
+ *
+ * @author sunrain
+ * @date 2017年9月28日
+ * @email dybarr@qq.com
  */
 public class DataExistException extends SystemException {
 
-    public DataExistException(String message) {
-        super(message);
-    }
+	/** serialVersionUID*/
+	private static final long serialVersionUID = 7017457255804124732L;
 
-    public DataExistException(String message, Throwable cause) {
-        super(message, cause);
-    }
+	public DataExistException(String message) {
+		super(message);
+	}
+
+	public DataExistException(String message, Throwable cause) {
+		super(message, cause);
+	}
 }

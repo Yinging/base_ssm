@@ -48,31 +48,78 @@
 
 
 	<properties>
+		<!-- Guava工程包含了若干被Google的 Java项目广泛依赖 的核心库 -->
+		<guava.version>18.0</guava.version>
+
+		<!-- fastjson -->
+		<fastjson.version>1.2.38</fastjson.version>
+
 		<!-- junit4 -->
 		<junit.version>4.11</junit.version>
+
 		<!-- 日志依赖 日志规范：slf4j 日志实现框架：logback或者log4j -->
 		<slf4j.version>1.7.7</slf4j.version>
 		<logback.version>1.1.2</logback.version>
+
 		<!-- DB依赖:mysql,druid -->
-		<mysql.version>5.1.26</mysql.version>
+		<mysql.version>5.1.38</mysql.version>
 		<druid.version>1.0.18</druid.version>
+
 		<!-- DAO依赖:mybatis,mybatis支持Spring的依赖 -->
 		<mybatis.version>3.3.0</mybatis.version>
 		<mybatis.spring.version>1.3.0</mybatis.spring.version>
-		<!-- Servlet依赖 -->
+
+		<!-- Servlet 依赖 -->
 		<taglibs.standard.version>1.1.2</taglibs.standard.version>
-		<servlet.api.version>3.0-alpha-1</servlet.api.version>
+		<servlet.api.version>3.1.0</servlet.api.version>
 		<servlet.jstl.version>1.2</servlet.jstl.version>
 		<jackson.version>2.5.4</jackson.version>
+
 		<!-- Spring依赖 1:核心依赖 2:DAO 3:web 4:test -->
-		<spring.version>4.1.6.RELEASE</spring.version>
+		<spring.version>4.1.9.RELEASE</spring.version>
 
 		<java.version>1.7</java.version>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 	</properties>
 
-
 	<dependencies>
+
+		<!-- redis客户端:Jedis -->
+		<dependency>
+			<groupId>redis.clients</groupId>
+			<artifactId>jedis</artifactId>
+			<version>2.8.0</version>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework.data</groupId>
+			<artifactId>spring-data-redis</artifactId>
+			<version>1.6.4.RELEASE</version>
+		</dependency>
+		<dependency>
+			<groupId>com.dyuproject.protostuff</groupId>
+			<artifactId>protostuff-core</artifactId>
+			<version>1.0.8</version>
+		</dependency>
+		<dependency>
+			<groupId>com.dyuproject.protostuff</groupId>
+			<artifactId>protostuff-runtime</artifactId>
+			<version>1.0.8</version>
+		</dependency>
+
+
+		<!-- https://mvnrepository.com/artifact/com.google.guava/guava -->
+		<dependency>
+			<groupId>com.google.guava</groupId>
+			<artifactId>guava</artifactId>
+			<version>${guava.version}</version>
+		</dependency>
+
+		<dependency>
+			<groupId>com.alibaba</groupId>
+			<artifactId>fastjson</artifactId>
+			<version>${fastjson.version}</version>
+		</dependency>
+
 		<!-- junit4 -->
 		<dependency>
 			<groupId>junit</groupId>
@@ -98,7 +145,6 @@
 			<version>${logback.version}</version>
 		</dependency>
 
-
 		<!-- DB依赖:mysql,c3p0 -->
 		<dependency>
 			<groupId>mysql</groupId>
@@ -111,6 +157,7 @@
 			<artifactId>druid</artifactId>
 			<version>${druid.version}</version>
 		</dependency>
+
 		<!-- DAO依赖:mybatis,mybatis支持Spring的依赖 -->
 		<dependency>
 			<groupId>org.mybatis</groupId>
@@ -128,12 +175,14 @@
 			<artifactId>standard</artifactId>
 			<version>${taglibs.standard.version}</version>
 		</dependency>
+
 		<dependency>
 			<groupId>javax.servlet</groupId>
 			<artifactId>servlet-api</artifactId>
 			<version>${servlet.api.version}</version>
 			<scope>provided</scope>
 		</dependency>
+
 		<dependency>
 			<groupId>javax.servlet</groupId>
 			<artifactId>jstl</artifactId>
@@ -192,7 +241,7 @@
 		</dependency>
 
 	</dependencies>
-	
+
 	<build>
 		<finalName>base-ssm</finalName>
 		<sourceDirectory>src/main/java</sourceDirectory>

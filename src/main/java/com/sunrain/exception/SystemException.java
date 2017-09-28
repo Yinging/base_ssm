@@ -1,19 +1,27 @@
 package com.sunrain.exception;
 
 /**
- * Created by FirePan on 2017/1/23.
+ * 
+ * Title: SystemException.java Description:
+ *
+ * @author sunrain
+ * @date 2017年9月28日
+ * @email dybarr@qq.com
  */
 public class SystemException extends RuntimeException {
 
-    public SystemException() {
-        super("系统异常");
-    }
+	/** serialVersionUID*/
+	private static final long serialVersionUID = -8715340953551909247L;
 
-    public SystemException(String message) {
-        super(message);
-    }
+	public SystemException() {
+		super("系统异常");
+	}
 
-    public SystemException(String message, Throwable cause) {
-        super(message, cause);
-    }
+	public SystemException(String message) {
+		super(message);
+	}
+
+	public SystemException(String message, Throwable cause) {
+		super(message, cause);
+	}
 }

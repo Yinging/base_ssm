@@ -1,39 +1,40 @@
 package com.sunrain.dto;
 
 /**
- * Created by FirePan on 2017/1/23.
+ * Title: UserSignInResult.java Description:
+ *
+ * @author sunrain
+ * @date 2017年9月28日
+ * @email dybarr@qq.com
  */
 public class UserSignInResult {
 
-    private boolean isSuccess;
-    private String userName;
+	private boolean isSuccess;
+	private String userName;
 
-    public UserSignInResult(boolean isSuccess, String userName) {
-        this.isSuccess = isSuccess;
-        this.userName = userName;
-    }
+	public UserSignInResult(boolean isSuccess, String userName) {
+		this.isSuccess = isSuccess;
+		this.userName = userName;
+	}
 
-    @Override
-    public String toString() {
-        return "UserSignInResult{" +
-                "isSuccess=" + isSuccess +
-                ", userName='" + userName + '\'' +
-                '}';
-    }
+	@Override
+	public String toString() {
+		return "UserSignInResult{" + "isSuccess=" + isSuccess + ", userName='" + userName + '\'' + '}';
+	}
 
-    public boolean isSuccess() {
-        return isSuccess;
-    }
+	public boolean isSuccess() {
+		return isSuccess;
+	}
 
-    public void setSuccess(boolean isSuccess) {
-        this.isSuccess = isSuccess;
-    }
+	public void setSuccess(boolean isSuccess) {
+		this.isSuccess = isSuccess;
+	}
 
-    public String getUserName() {
-        return userName;
-    }
+	public String getUserName() {
+		return userName;
+	}
 
-    public void setUserName(String userName) {
-        this.userName = userName;
-    }
+	public void setUserName(String userName) {
+		this.userName = userName;
+	}
 }

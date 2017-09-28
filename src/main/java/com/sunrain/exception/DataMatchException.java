@@ -1,14 +1,22 @@
 package com.sunrain.exception;
 
 /**
- * Created by FirePan on 2017/1/23.
+ * 
+ * Title: DataMatchException.java Description:
+ *
+ * @author sunrain
+ * @date 2017年9月28日
+ * @email dybarr@qq.com
  */
 public class DataMatchException extends SystemException {
-    public DataMatchException(String message) {
-        super(message);
-    }
+	/** serialVersionUID*/
+	private static final long serialVersionUID = -2980896681677871371L;
 
-    public DataMatchException(String message, Throwable cause) {
-        super(message, cause);
-    }
+	public DataMatchException(String message) {
+		super(message);
+	}
+
+	public DataMatchException(String message, Throwable cause) {
+		super(message, cause);
+	}
 }

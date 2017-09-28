@@ -21,7 +21,11 @@ import com.sunrain.vo.UserSignInForm;
 import com.sunrain.vo.UserSignUpForm;
 
 /**
- * Created by fo on 2017/1/23.
+ * Title: UserController.java Description:
+ *
+ * @author sunrain
+ * @date 2017年9月28日
+ * @email dybarr@qq.com
  */
 @Controller
 @RequestMapping(value = "/user")
